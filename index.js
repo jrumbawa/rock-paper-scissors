@@ -8,7 +8,8 @@ function getComputerChoice() {
 
 const computerSelection = getComputerChoice()
 
-function playRound(playerChoice, computerChoice) {
+function playRound(computerChoice) {
+  const playerChoice = prompt('Rock, paper or scissors?')
   if (playerChoice === 'rock' && computerChoice === 'scissors') {
     return 'You win! Rock beats scissors'
   } else if (playerChoice === 'rock' && computerChoice === 'paper') {
@@ -25,7 +26,13 @@ function playRound(playerChoice, computerChoice) {
     return "It's a draw!"
   }
 }
+function game() {
+  console.log(playRound(computerSelection))
+  console.log(playRound(computerSelection))
+  console.log(playRound(computerSelection))
+  console.log(playRound(computerSelection))
+  console.log(playRound(computerSelection))
+}
 
-console.log(playRound(playerSelection, computerSelection))
+game()
 
-Gamepad()
