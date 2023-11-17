@@ -10,20 +10,22 @@ const computerSelection = getComputerChoice()
 
 function playRound(playerChoice, computerChoice) {
   if (playerChoice === 'rock' && computerChoice === 'scissors') {
-    console.log('You win! Rock beats scissors')
+    return 'You win! Rock beats scissors'
   } else if (playerChoice === 'rock' && computerChoice === 'paper') {
-    console.log('You lose! Paper beats rock!')
+    return 'You lose! Paper beats rock!'
   } else if (playerChoice === 'paper' && computerChoice === 'rock') {
-    console.log('You win! Paper beats rock') 
+    return 'You win! Paper beats rock'
   } else if (playerChoice === 'paper' && computerChoice === 'scissors') {
-    console.log('You lose! Scissors beats paper!')
+    return 'You lose! Scissors beats paper!'
   } else if (playerChoice === 'scissors' && computerChoice === 'paper') {
-    console.log('You win! Scissors beats paper!')
+    return 'You win! Scissors beats paper!'
   } else if (playerChoice === 'scissors' && computerChoice === 'rock') {
-    console.log('You lose! Rock beats paper')
+    return 'You lose! Rock beats paper'
   } else {
-    console.log("It's a draw!")
+    return "It's a draw!"
   }
 }
 
-playRound(playerSelection, computerSelection)
+console.log(playRound(playerSelection, computerSelection))
+
+Gamepad()
